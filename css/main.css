@@ -298,3 +298,17 @@ html { height: 100%;}
     background-color: rgba(250,250,250,.8);
     z-index: 1;
 }
+
+
+/* content wrapper's related CSS */
+
+#page-content-wrapper{
+    background-image: url("../images/backgrounds/background_2.jpg") !important;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 101.55vh;
+}
+
+.container-fluid{
+    margin: -15px !important;
+}

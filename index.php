@@ -23,7 +23,7 @@
                 <ul class="nav sidebar-nav">
                     <li class="sidebar-brand">
                         <a href="#">
-                            Brand
+                        Athletics Meeting
                         </a>
                     </li>
                     <li>
