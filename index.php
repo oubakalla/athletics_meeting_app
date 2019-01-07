@@ -1,28 +1,89 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Athletics Meeting App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/bootstrap-3.4.0-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 </head>
+
 <body>
-    <!-- <?php
+    <?php
     include 'functions.php';
-    ?> -->
-    <div class="container">
-        <header class="row jumbotron">
-            <nav class="col-xs-1">
-                <ul>
-                    <li></li>
+    ?>
+    <div class="container-fluid">
+        <div id="wrapper">
+            <div class="overlay"></div>
+
+            <!-- Sidebar -->
+            <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+                <ul class="nav sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="#">
+                            Brand
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">add athlete</a>
+                    </li>
+                    <li>
+                        <a href="#">update athlete</a>
+                    </li>
+                    <li>
+                        <a href="#">athletes list</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">admitted/rejected athletes <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li class="dropdown-header">Dropdown heading</li>
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Customized search</a>
+                    </li>
                 </ul>
             </nav>
-            <h1 class="col-xs-11">Athletics Meeting</h1>
-        </header>
-    </div>
-    <script src="assets/jquery-3.3.1.min.js"></script>
-    <script src="main.js"></script>
+            <!-- /#sidebar-wrapper -->
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                    <span class="hamb-top"></span>
+                    <span class="hamb-middle"></span>
+                    <span class="hamb-bottom"></span>
+                </button>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="panel-group">
+                                <div class="panel panel-info">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            Athletes list
+                                        </h3>
+                                    </div>
+                                    <div id="item1" class="">
+                                        <div class="panel-body">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="assets/jquery-3.3.1.min.js"></script>
+        <script src="assets/bootstrap-3.4.0-dist/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
 </body>
+
 </html>
