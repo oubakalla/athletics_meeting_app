@@ -59,7 +59,7 @@
                 <div class="container-fluid">
                     <div class="row">
 
-                        <form class="well">
+                        <form class="col-xs-offset-3 col-xs-6 well" action="index.php" method="POST">
                             <legend>Add Athlete</legend>
                             <fieldset>
                                 <label for="textarea">Name: </label>

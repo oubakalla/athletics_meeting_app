@@ -319,3 +319,23 @@ html { height: 100%;}
     background-color: rgba(100, 100, 100, 0.5) !important;
     color: white !important;
 }
+
+
+/* add_athlete form style */
+
+.well{
+    background-color: rgba(192, 192, 192, 0.5);
+    padding: 20px;
+    margin-top: 7%;
+    color: white;
+}
+
+.well *{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.well legend{
+    color: white;
+}
+
