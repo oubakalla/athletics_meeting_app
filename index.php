@@ -23,11 +23,11 @@
                 <ul class="nav sidebar-nav">
                     <li class="sidebar-brand">
                         <a href="#">
-                        Athletics Meeting
+                            Athletics Meeting
                         </a>
                     </li>
                     <li>
-                        <a href="#">Add athlete</a>
+                        <a href="add_athlete.php">Add athlete</a>
                     </li>
                     <li>
                         <a href="#">Update athlete</a>
@@ -56,18 +56,22 @@
                     <span class="hamb-middle"></span>
                     <span class="hamb-bottom"></span>
                 </button>
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="panel-group">
-                                <div class="panel panel-info">
+                        <div class="col-xs-8 col-lg-offset-2">
+                            <div class="panel-group col-xs-12">
+                                <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <h3 class="panel-title">
-                                            Athletes list
+                                            <a href="#item1">
+                                                Athletes </a>
                                         </h3>
                                     </div>
-                                    <div id="item1" class="">
+                                    <div id="item1">
                                         <div class="panel-body">
+                                            <?php
+                                            
+                                            ?>
                                         </div>
                                     </div>
                                 </div>
@@ -76,6 +80,15 @@
                     </div>
                 </div>
             </div>
+
+
+
+
+
+
+
+
+
         </div>
         <script src="assets/jquery-3.3.1.min.js"></script>
         <script src="assets/bootstrap-3.4.0-dist/js/bootstrap.min.js"></script>
