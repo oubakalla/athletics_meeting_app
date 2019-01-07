@@ -312,3 +312,10 @@ html { height: 100%;}
 .container-fluid{
     margin: -15px !important;
 }
+
+/* Athletes panes CSS */
+
+.panel, .panel-heading{
+    background-color: rgba(100, 100, 100, 0.5) !important;
+    color: white !important;
+}
