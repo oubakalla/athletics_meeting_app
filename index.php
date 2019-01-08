@@ -74,7 +74,7 @@
                                     <div id="item1">
                                         <div class="panel-body">
                                             <?php
-                                            
+                                            list_all_athletes();
                                             ?>
                                         </div>
                                     </div>
