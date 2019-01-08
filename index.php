@@ -14,6 +14,10 @@
     <?php
     include 'functions.php';
     ?>
+
+    <?php
+    add_athlete();
+    ?>
     <div class="container-fluid">
         <div id="wrapper">
             <div class="overlay"></div>
