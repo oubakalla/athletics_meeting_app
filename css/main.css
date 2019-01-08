@@ -339,3 +339,8 @@ html { height: 100%;}
     color: white;
 }
 
+td{
+    color: black !important;
+    background-color: rgba(212, 173, 143, 0.5) !important;
+    box-shadow: 2px 2px 5px;
+}
