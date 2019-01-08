@@ -53,14 +53,24 @@ function list_all_athletes(){
     $result = mysqli_query($conn, $sql);
 
     if (mysqli_num_rows($result) > 0) {
+        echo "<table class='table table-bordered table-condensed'>";
+        echo "<tr>";
+        echo "<th>Id</th><th>Name</th><th>Birth date</th><th>Country</th>";
+        echo "</tr>";
         // output data of each row
         while($row = mysqli_fetch_assoc($result)) {
-        echo "<hr>" . "id: " . $row["numAthlete"]. " - Name: " . $row["nomAthlete"]. " " . $row["prenomAthlete"] . "Birth date: " . $row["dateNaissance"] . "Country: " . $row["ville"] . "<br><hr>";
-    }
+            echo "<tr class='info'><td>" . $row["numAthlete"] . "</td><td>" . $row["nomAthlete"] . " " . $row["prenomAthlete"] . "</td><td>" . $row["dateNaissance"] . "</td><td>" . $row["ville"] . "</td></tr>";
+        }
+        echo "</table>";
     } else {
         echo "0 results";
     }
 
     mysqli_close($conn);
+}
+
+
+function athletes_comboBox(){
+    // echo "<select name="ville" class="form-control">"
 }
 ?>
