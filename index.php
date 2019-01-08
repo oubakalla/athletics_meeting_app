@@ -62,7 +62,7 @@
                 </button>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-xs-8 col-lg-offset-2">
+                        <div class="col-md-8 col-md-push-2">
                             <div class="panel-group col-xs-12">
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
