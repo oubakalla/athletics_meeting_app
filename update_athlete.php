@@ -63,7 +63,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-8 col-md-push-2">
-                            <div class="panel-group col-xs-5">
+                            <div class="panel-group col-xs-push-3 col-xs-6">
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <h3 class="panel-title">
