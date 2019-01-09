@@ -70,7 +70,40 @@ function list_all_athletes(){
 }
 
 
-function athletes_comboBox(){
-    // echo "<select name="ville" class="form-control">"
+function updateAthleteForm(){
+    echo "<form class='form-inline' action='index.php' method='POST'>";
+    echo "<select name='athlete' class='form-control'>";
+    
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "athletisme";
+
+    // Create connection
+    $conn = mysqli_connect($servername, $username, $password, $dbname);
+    // Check connection
+    if (!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
+    }
+
+    $sql = "SELECT numAthlete,nomAthlete,prenomAthlete FROM athlete";
+    $result = mysqli_query($conn, $sql);
+
+
+
+    if (mysqli_num_rows($result) > 0) {
+        // output data of each row
+        while($row = mysqli_fetch_assoc($result)) {
+            echo "<option value=" . "'" . $row["numAthlete"] . "'" . ">" . $row['numAthlete'] . " " . $row['nomAthlete'] . " " . $row['prenomAthlete'] . "</option>";
+        }
+    } else {
+        echo "<option value=''>0 results</option>";
+    }
+
+    mysqli_close($conn);
+
+    echo "</select>";
+    echo "<button class='form-control' type='submit' name='submit' value='submit'>Update</button>";
+    echo "</form>";
 }
 ?>

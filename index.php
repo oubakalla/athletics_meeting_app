@@ -34,7 +34,7 @@
                         <a href="add_athlete.php">Add athlete</a>
                     </li>
                     <li>
-                        <a href="#">Update athlete</a>
+                        <a href="update_athlete.php">Update athlete</a>
                     </li>
                     <li>
                         <a href="#">Athletes list</a>
