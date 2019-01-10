@@ -71,7 +71,7 @@
                                 </select>
                                 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
                                 <script src="//geodata.solutions/includes/countrystatecity.js"></script>
-                                <button class="btn btn-primary" type="submit">Enter</button>
+                                <button class="btn btn-primary" type="submit" name='submit' value="add">Enter</button>
                             </fieldset>
                         </form>
                     </div>

@@ -17,6 +17,7 @@
 
     <?php
     add_athlete();
+    updateAthlete();
     ?>
     <div class="container-fluid">
         <div id="wrapper">

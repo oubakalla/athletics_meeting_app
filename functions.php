@@ -2,7 +2,7 @@
 
 function add_athlete(){
     if (!empty($_POST)) {
-        if ($_POST['nom']!=="") {
+        if ($_POST['submit']=="add") {
             $nom = $_POST['nom'];
             $prenom = $_POST['prenom'];
             $dateNaissance = $_POST['dateNaissance'];
@@ -113,8 +113,44 @@ function updateAthleteForm(){
     echo "<input type='date' name='dateNaissance' id='birthDate' class='form-control'>";
     echo "<label for='country'>Country: </label>";
     echo '<select name="ville" class="countries form-control" id="countryId"><option value="">Select Country</option></select><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><script src="//geodata.solutions/includes/countrystatecity.js"></script>';
-    echo '<button class="btn btn-primary" type="submit">Update</button>';
+    echo '<button class="btn btn-primary" type="submit" name="submit" value="update">Update</button>';
     echo "</fieldset>";
     echo "</form>";
 }
+
+function updateAthlete(){
+    if (!empty($_POST)) {
+        if ($_POST['submit']=="update") {
+            $nom = $_POST['nom'];
+            $prenom = $_POST['prenom'];
+            $dateNaissance = $_POST['dateNaissance'];
+            $ville = $_POST['ville'];
+            $numAthlete = $_POST['athlete'];
+    
+            
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname = "athletisme";
+    
+            // Create connection
+            $conn = mysqli_connect($servername, $username, $password, $dbname);
+    
+            // Check connection
+            if (!$conn) {
+                die("Connection failed: " . mysqli_connect_error());
+            }
+    
+    
+            // Query database
+            $sql = "UPDATE athlete set nomAthlete='$nom', prenomAthlete='$prenom', dateNaissance='$dateNaissance', ville='$ville' WHERE numAthlete='$numAthlete';";
+            if (!mysqli_query($conn, $sql)) {
+                echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+            }
+    
+            mysqli_close($conn);
+        }
+    }
+}
+
 ?>
