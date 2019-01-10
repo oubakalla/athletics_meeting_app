@@ -71,8 +71,10 @@ function list_all_athletes(){
 
 
 function updateAthleteForm(){
-    echo "<form class='form-inline' action='index.php' method='POST'>";
-    echo "<select name='athlete' class='form-control'>";
+    echo "<form class='col-xs-12 well' action='index.php' method='POST'>";
+    echo "<legend>Update Athlete</legend>";
+    echo '<fieldset>';
+    echo "<select name='athlete' class='form-control col-xs-4'>";
     
     $servername = "localhost";
     $username = "root";
@@ -103,7 +105,16 @@ function updateAthleteForm(){
     mysqli_close($conn);
 
     echo "</select>";
-    echo "<button class='form-control' type='submit' name='submit' value='submit'>Update</button>";
-    echo "</form>";
+    echo "<label for='firstName'>First name: </label>";
+    echo "<input type='text' name='nom' id='firstName' class='form-control'>";
+    echo "<label for='lastName'>Last name: </label>";
+    echo "<input type='text' name='prenom' id='lastName' class='form-control'>";
+    echo "<label for='birthDate'>Birth date: </label>";
+    echo "<input type='date' name='dateNaissance' id='birthDate' class='form-control'>";
+    echo "<label for='country'>Country: </label>";
+    echo '<select name="ville" class="countries form-control col-xs-4" id="countryId"><option value="">Select Country</option></select><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><script src="//geodata.solutions/includes/countrystatecity.js"></script>';
+echo `<button class="btn btn-primary" type="submit">Update</button>`;
+echo `</fieldset>`;
+echo "</form>";
 }
 ?>
