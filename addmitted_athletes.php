@@ -15,10 +15,6 @@
     include 'functions.php';
     ?>
 
-    <?php
-    add_athlete();
-    updateAthlete();
-    ?>
     <div class="container-fluid">
         <div id="wrapper">
             <div class="overlay"></div>
@@ -43,7 +39,7 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Athletes<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="addmitted_athletes.php">Addmitted</a></li>
+                            <li><a href="#">Addmitted</a></li>
                             <li><a href="#">Rejected</a></li>
                         </ul>
                     </li>
@@ -75,7 +71,7 @@
                                     <div id="item1">
                                         <div class="panel-body">
                                             <?php
-                                            list_all_athletes();
+                                            list_admitted_athletes();
                                             ?>
                                         </div>
                                     </div>
