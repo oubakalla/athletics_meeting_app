@@ -26,7 +26,7 @@
             <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
                 <ul class="nav sidebar-nav">
                     <li class="sidebar-brand">
-                        <a href="#">
+                        <a href="index.php">
                             Athletics Meeting
                         </a>
                     </li>
@@ -34,10 +34,10 @@
                         <a href="add_athlete.php">Add athlete</a>
                     </li>
                     <li>
-                        <a href="#">Update athlete</a>
+                        <a href="update_athlete.php">Update athlete</a>
                     </li>
                     <li>
-                        <a href="#">Athletes list</a>
+                        <a href="index.php">Athletes list</a>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Athletes<span class="caret"></span></a>
