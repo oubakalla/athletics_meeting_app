@@ -154,6 +154,40 @@ function updateAthlete(){
 }
 
 
+function list_rejected_athletes(){
+    
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "athletisme";
+
+    // Create connection
+    $conn = mysqli_connect($servername, $username, $password, $dbname);
+    // Check connection
+    if (!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
+    }
+
+    $sql = "SELECT athlete.numAthlete,nomAthlete,prenomAthlete,dateNaissance,ville FROM athlete,notes WHERE athlete.numAthlete = notes.numAthlete and notes.note < 10;";
+    $result = mysqli_query($conn, $sql);
+
+    if (mysqli_num_rows($result) > 0) {
+        echo "<table class='table table-bordered table-condensed'>";
+        echo "<tr>";
+        echo "<th>Id</th><th>Name</th><th>Birth date</th><th>Country</th>";
+        echo "</tr>";
+        // output data of each row
+        while($row = mysqli_fetch_assoc($result)) {
+            echo "<tr class='info'><td>" . $row["numAthlete"] . "</td><td>" . $row["nomAthlete"] . " " . $row["prenomAthlete"] . "</td><td>" . $row["dateNaissance"] . "</td><td>" . $row["ville"] . "</td></tr>";
+        }
+        echo "</table>";
+    } else {
+        echo "0 results";
+    }
+
+    mysqli_close($conn);
+}
+
 function list_admitted_athletes(){
     
     $servername = "localhost";
