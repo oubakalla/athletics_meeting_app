@@ -38,7 +38,7 @@
                         <a href="update_athlete.php">Update athlete</a>
                     </li>
                     <li>
-                        <a href="#">Athletes list</a>
+                        <a href="index.php">Athletes list</a>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Athletes<span class="caret"></span></a>
