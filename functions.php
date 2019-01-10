@@ -112,7 +112,7 @@ function updateAthleteForm(){
     echo "<label for='birthDate'>Birth date: </label>";
     echo "<input type='date' name='dateNaissance' id='birthDate' class='form-control'>";
     echo "<label for='country'>Country: </label>";
-    echo '<select name="ville" class="countries form-control col-xs-4" id="countryId"><option value="">Select Country</option></select><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><script src="//geodata.solutions/includes/countrystatecity.js"></script>';
+    echo '<select name="ville" class="countries form-control" id="countryId"><option value="">Select Country</option></select><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><script src="//geodata.solutions/includes/countrystatecity.js"></script>';
     echo '<button class="btn btn-primary" type="submit">Update</button>';
     echo "</fieldset>";
     echo "</form>";
