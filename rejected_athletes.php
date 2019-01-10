@@ -71,7 +71,7 @@
                                     <div id="item1">
                                         <div class="panel-body">
                                             <?php
-                                            list_admitted_athletes();
+                                            list_rejected_athletes();
                                             ?>
                                         </div>
                                     </div>

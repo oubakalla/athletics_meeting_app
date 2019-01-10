@@ -27,7 +27,7 @@
             <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
                 <ul class="nav sidebar-nav">
                     <li class="sidebar-brand">
-                        <a href="#">
+                        <a href="index.php">
                             Athletics Meeting
                         </a>
                     </li>
@@ -44,7 +44,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Athletes<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="addmitted_athletes.php">Addmitted</a></li>
-                            <li><a href="#">Rejected</a></li>
+                            <li><a href="rejected_athletes.php">Rejected</a></li>
                         </ul>
                     </li>
                     <li>

@@ -38,8 +38,8 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Athletes<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Addmitted</a></li>
-                            <li><a href="#">Rejected</a></li>
+                            <li><a href="addmitted_athletes.php">Addmitted</a></li>
+                            <li><a href="rejected_athletes.php">Rejected</a></li>
                         </ul>
                     </li>
                     <li>
