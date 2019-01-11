@@ -65,7 +65,7 @@
                                     <div class="panel-heading">
                                         <h3 class="panel-title">
                                             <a href="#item1">
-                                                Athletes </a>
+                                                Rejected Athletes </a>
                                         </h3>
                                     </div>
                                     <div id="item1">
